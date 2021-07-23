@@ -1,6 +1,6 @@
 # Unirep circuits with snarkit compiler
 
-##　Installation
+## Installation
 ```
 npm install
 ```
