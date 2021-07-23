@@ -32,7 +32,7 @@ npx snarkit compile circuits/merkleTreeLeafExists --backend native
 npx snarkit check circuits/merkleTreeLeafExists --backend native
 ```
 
-##　`MerkleTreeInclusionProof`
+## `MerkleTreeInclusionProof`
 ```bash
 # compile
 npx snarkit compile circuits/merkleTreeInclusionProof --backend native
@@ -41,24 +41,13 @@ npx snarkit compile circuits/merkleTreeInclusionProof --backend native
 npx snarkit check circuits/merkleTreeInclusionProof --backend native
 ```
 
-##　`processAttestations`
+## `processAttestations`
 ```bash
 # compile
 npx snarkit compile circuits/processAttestations --backend native
 
 # check
 npx snarkit check circuits/processAttestations --backend native
-
-# Error
-circuit.fast: /home/vivi/Github/unirep-snarkit/circuits/processAttestations/main.cpp:165: void iterateArr(Circom_CalcWit*, int, Circom_Sizes, json, ItFunc): Assertion `(sizes[0] == 1)&&(sizes[1] == 0)' failed.
-Aborted (core dumped)
-
-Error: Error: Could not generate witness
-    at WitnessGenerator.generateWitness (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/src/witness_generator.js:294:23)
-    at Object.testCircuitDir (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/index.js:34:32)
-    at async Command.<anonymous> (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/cli.js:36:13)
-    at async Promise.all (index 0)
-    at async main (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/cli.js:44:9)
 ```
 
 ## `ProveReputation`
@@ -68,15 +57,40 @@ npx snarkit compile circuits/proveReputation --backend native
 
 # check
 npx snarkit check circuits/proveReputation --backend native
+```
 
-# Error
-circuit.fast: /home/vivi/Github/unirep-snarkit/circuits/proveReputation/main.cpp:165: void iterateArr(Circom_CalcWit*, int, Circom_Sizes, json, ItFunc): Assertion `(sizes[0] == 1)&&(sizes[1] == 0)' failed.
-Aborted (core dumped)
+## `SMTLeafExists`
+```bash
+# compile
+npx snarkit compile circuits/SMTLeafExists --backend native
 
-Error: Error: Could not generate witness
-    at WitnessGenerator.generateWitness (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/src/witness_generator.js:294:23)
-    at Object.testCircuitDir (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/index.js:34:32)
-    at async Command.<anonymous> (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/cli.js:36:13)
-    at async Promise.all (index 0)
-    at async main (/home/vivi/Github/unirep-snarkit/node_modules/snarkit/dist/cli.js:44:9)
+# check
+npx snarkit check circuits/SMTLeafExists --backend native
+```
+
+## `SMTInclusionProof`
+```bash
+# compile
+npx snarkit compile circuits/SMTInclusionProof --backend native
+
+# check
+npx snarkit check circuits/SMTInclusionProof --backend native
+```
+
+## `verifyHashChain`
+```bash
+# compile
+npx snarkit compile circuits/verifyHashChain --backend native
+
+# check
+npx snarkit check circuits/verifyHashChain --backend native
+```
+
+## `userStateTransition`
+```bash
+# compile
+npx snarkit compile circuits/userStateTransition --backend native
+
+# check
+npx snarkit check circuits/userStateTransition --backend native
 ```
